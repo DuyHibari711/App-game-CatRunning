@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "36654080494",
+    "project_id": "catgame-1b695",
+    "storage_bucket": "catgame-1b695.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:36654080494:android:40d2f903cb5d6101656eff",
+        "android_client_info": {
+          "package_name": "com.example.gamebtl"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEFEy8L9doY_I0E-rJORuL0JNq7h-VgKM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

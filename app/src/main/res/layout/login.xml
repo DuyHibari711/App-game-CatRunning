@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/game_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <!-- Hình nền -->
+    <ImageView
+        android:id="@+id/background1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/background"
+        android:scaleType="fitXY" />
+
+
+    <!-- Login -->
+    <RelativeLayout
+        android:id="@+id/Login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/Login_Table"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/login_table"/>
+
+        <ImageView
+            android:id="@+id/ImgLogin"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="55dp"
+            android:src="@drawable/login"/>
+
+        <ImageView
+            android:id="@+id/email"
+            android:layout_width="60dp"
+            android:layout_height="13dp"
+            android:layout_marginTop="130dp"
+            android:layout_marginLeft="310dp"
+            android:src="@drawable/email"/>
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120dp"
+            android:fontFamily="@font/minecrafter_3"
+            android:textSize="6dp"
+            android:textColor="@color/white"
+            android:shadowColor="@color/black"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="3"
+            android:layout_toRightOf="@id/email"
+            android:paddingLeft="20dp"
+            android:paddingBottom="5dp"
+            android:background="@drawable/login_et"
+            android:inputType="textEmailAddress"/>
+
+
+        <ImageView
+            android:id="@+id/password"
+            android:layout_width="70dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="175dp"
+            android:layout_marginLeft="320dp"
+            android:src="@drawable/password"/>
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="165dp"
+            android:fontFamily="@font/minecrafter_3"
+            android:textSize="6dp"
+            android:textColor="@color/white"
+            android:shadowColor="@color/black"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="3"
+            android:layout_toRightOf="@id/password"
+            android:paddingLeft="20dp"
+            android:paddingBottom="5dp"
+            android:background="@drawable/login_et"
+            android:inputType="textPassword"/>
+
+        <CheckBox
+            android:id="@+id/CheckPassword"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/etPassword"
+            android:layout_marginLeft="400dp"
+            android:background="@drawable/check_password"
+            android:button="@android:color/transparent"
+            android:layout_marginTop="5dp"
+            android:onClick="CheckPassword"/>
+        <ImageView
+            android:id="@+id/mouse_check"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/etPassword"
+            android:layout_marginLeft="398dp"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/mouse_check"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/TextCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etPassword"
+            android:text="Check Password"
+            android:fontFamily="@font/minecrafter_3"
+            android:textSize="7dp"
+            android:textColor="@color/white"
+            android:shadowColor="@color/black"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="3"
+            android:layout_toRightOf="@id/CheckPassword"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"/>
+
+
+
+        <ImageButton
+            android:id="@+id/start_login"
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/CheckPassword"
+            android:background="@drawable/login_et"
+            android:layout_marginLeft="365dp"
+            android:layout_marginTop="15dp"/>
+        <ImageView
+            android:id="@+id/ImgStartLogin"
+            android:layout_width="130dp"
+            android:layout_height="12dp"
+            android:layout_below="@id/CheckPassword"
+            android:layout_marginLeft="365dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/login"/>
+
+        <TextView
+            android:id="@+id/Quest_Account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/start_login"
+            android:text="Do not have an account?"
+            android:fontFamily="@font/minecrafter_3"
+            android:textSize="7dp"
+            android:textColor="@color/white"
+            android:shadowColor="@color/black"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="3"
+            android:layout_marginLeft="345dp"
+            android:layout_marginTop="15dp"/>
+        <TextView
+            android:id="@+id/Link_Signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/start_login"
+            android:layout_toRightOf="@id/Quest_Account"
+            android:text="Register"
+            android:fontFamily="@font/minecrafter_3"
+            android:textSize="7dp"
+            android:textColor="#00FF7B"
+            android:shadowColor="@color/black"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="3"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

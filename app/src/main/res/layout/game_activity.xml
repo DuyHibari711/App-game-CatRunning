@@ -1,0 +1,716 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/game_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity">
+
+    <!-- Hình nền 5 -->
+    <ImageView
+        android:id="@+id/background5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/background_5"
+        android:scaleType="fitXY" />
+
+    <!-- Hình nền 6 -->
+    <ImageView
+        android:id="@+id/background6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/background_6"
+        android:scaleType="fitXY" />
+
+    <!-- Hình nền 3 -->
+    <ImageView
+        android:id="@+id/background3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/background_3"
+        android:scaleType="fitXY" />
+
+    <!-- Hình nền 4 -->
+    <ImageView
+        android:id="@+id/background4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/background_4"
+        android:scaleType="fitXY" />
+
+    <!-- Hình nền 1 -->
+    <ImageView
+        android:id="@+id/background1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/background"
+        android:scaleType="fitXY" />
+
+    <!-- Hình nền 2 -->
+    <ImageView
+        android:id="@+id/background2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/background_2"
+        android:scaleType="fitXY" />
+
+
+    <!-- Score -->
+    <RelativeLayout
+        android:id="@+id/score_right"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/Imgscore"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="700dp"
+            android:src="@drawable/score"/>
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:fontFamily="@font/minecrafter_3"
+            android:textSize="17dp"
+            android:textColor="@color/white"
+            android:shadowColor="@color/black"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="3"
+            android:layout_toRightOf="@id/Imgscore"
+            android:layout_marginTop="17dp"/>
+    </RelativeLayout>
+
+    <!-- Coin -->
+    <RelativeLayout
+        android:id="@+id/Coin_right"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/Imgcoin"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="700dp"
+            android:src="@drawable/coin"/>
+
+        <TextView
+            android:id="@+id/coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:fontFamily="@font/minecrafter_3"
+            android:textSize="17dp"
+            android:textColor="@color/white"
+            android:shadowColor="@color/black"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="3"
+            android:layout_toRightOf="@id/Imgcoin"
+            android:layout_marginTop="55dp"/>
+
+        <ImageView
+            android:id="@+id/ImgCoin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="57dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/coin"
+            android:src="@drawable/coin_animation"/>
+    </RelativeLayout>
+
+
+    <!-- Notification -->
+    <RelativeLayout
+        android:id="@+id/Notification"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ImgNotification"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/thong_bao"/>
+
+        <ImageView
+            android:id="@+id/Background_Reward"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="95dp"
+            android:src="@drawable/background_reward"/>
+        <ImageView
+            android:id="@+id/ImgReward"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="90dp"
+            android:src="@drawable/reward"/>
+
+        <ImageView
+            android:id="@+id/ImgScore2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="160dp"
+            android:layout_marginLeft="370dp"
+            android:src="@drawable/score"/>
+        <TextView
+            android:id="@+id/score_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:fontFamily="@font/minecrafter_3"
+            android:textSize="14dp"
+            android:textColor="@color/white"
+            android:shadowColor="@color/black"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="3"
+            android:layout_toRightOf="@id/ImgScore2"
+            android:gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="175dp" />
+
+        <ImageView
+            android:id="@+id/ImgCoin2"
+            android:layout_width="35dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginLeft="370dp"
+            android:src="@drawable/coin"/>
+        <TextView
+            android:id="@+id/coin_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:fontFamily="@font/minecrafter_3"
+            android:textSize="14dp"
+            android:textColor="@color/white"
+            android:shadowColor="@color/black"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="3"
+            android:layout_toRightOf="@id/ImgScore2"
+            android:gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="195dp" />
+
+        <ImageButton
+            android:id="@+id/bnt_home"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/background_btn_endgame"
+            android:layout_toLeftOf="@id/redo"
+            android:layout_marginRight="27dp"
+            android:layout_marginTop="230dp"/>
+        <ImageButton
+            android:id="@+id/home"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/home"
+            android:layout_toLeftOf="@id/redo"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="240dp"/>
+
+        <ImageButton
+            android:id="@+id/bnt_redo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/background_btn_endgame"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="230dp"/>
+        <ImageButton
+            android:id="@+id/redo"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/redo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="240dp"/>
+
+        <ImageButton
+            android:id="@+id/bnt_exit"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/background_btn_endgame"
+            android:layout_toRightOf="@id/redo"
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="230dp"/>
+        <ImageButton
+            android:id="@+id/exit"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/exit"
+            android:layout_toRightOf="@id/redo"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="240dp"/>
+    </RelativeLayout>
+
+
+    <!-- Pause -->
+    <ImageButton
+        android:id="@+id/btn_pause"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button_eg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="9dp"/>
+    <ImageButton
+        android:id="@+id/pause_game"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/pause_game"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+    <RelativeLayout
+        android:id="@+id/Setting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/Setting_Table"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/setting_table"/>
+
+        <ImageView
+            android:id="@+id/Background_Setting"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:src="@drawable/background_setting"/>
+        <ImageView
+            android:id="@+id/ImgSetting"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="83dp"
+            android:src="@drawable/button_setting"/>
+
+
+        <TextView
+            android:id="@+id/music_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Music"
+            android:fontFamily="@font/minecrafter_3"
+            android:textSize="14dp"
+            android:textColor="@color/white"
+            android:shadowColor="@color/black"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="5"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="145dp" />
+        <ImageButton
+            android:id="@+id/bg_music_mid"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/bg_resume"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="175dp"
+            android:visibility="visible"/>
+        <ImageButton
+            android:id="@+id/bg_music_mid_pick"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/bg_music_pick"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="172dp"
+            android:visibility="gone"/>
+        <ImageButton
+            android:id="@+id/music_mid"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/music_mid"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="183dp"/>
+
+        <ImageButton
+            android:id="@+id/bg_music_off"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/bg_resume"
+            android:layout_toLeftOf="@+id/music_mid"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="175dp"
+            android:visibility="visible"/>
+        <ImageButton
+            android:id="@+id/bg_music_off_pick"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/bg_music_pick"
+            android:layout_toLeftOf="@+id/music_mid"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="172dp"
+            android:visibility="gone"/>
+        <ImageButton
+            android:id="@+id/music_off"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/music_off"
+            android:layout_toLeftOf="@+id/music_mid"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="183dp"/>
+
+        <ImageButton
+            android:id="@+id/bg_music_full"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/bg_resume"
+            android:layout_toRightOf="@+id/music_mid"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="175dp"
+            android:visibility="visible"/>
+        <ImageButton
+            android:id="@+id/bg_music_full_pick"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/bg_music_pick"
+            android:layout_toRightOf="@+id/music_mid"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="172dp"
+            android:visibility="gone"/>
+        <ImageButton
+            android:id="@+id/music_full"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/music_full"
+            android:layout_toRightOf="@+id/music_mid"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="183dp"/>
+
+
+
+
+        <ImageButton
+            android:id="@+id/bnt_home_setting"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_resume"
+            android:layout_toLeftOf="@id/resume"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="250dp"/>
+        <ImageButton
+            android:id="@+id/home_setting"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/home"
+            android:layout_toLeftOf="@id/resume"
+            android:layout_marginRight="45dp"
+            android:layout_marginTop="260dp"/>
+
+        <ImageButton
+            android:id="@+id/bg_resume"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_resume"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="250dp"/>
+        <ImageButton
+            android:id="@+id/resume"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/resume"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="260dp"/>
+
+        <ImageButton
+            android:id="@+id/bnt_redo_setting"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_resume"
+            android:layout_toRightOf="@id/resume"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="250dp"/>
+
+        <ImageButton
+            android:id="@+id/redo_setting"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/redo"
+            android:layout_toRightOf="@id/resume"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="260dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/All_level"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/Level_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+            <ImageView
+                android:id="@+id/BGDifficultyLevel_1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="-25dp"
+                android:layout_marginLeft="-10dp"
+                android:src="@drawable/level_1" />
+            <TextView
+                android:id="@+id/DifficultyLevel_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Easy"
+                android:fontFamily="@font/minecrafter_3"
+                android:textSize="7dp"
+                android:textColor="@color/white"
+                android:shadowColor="@color/black"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="3"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="28dp" />
+            <ImageView
+                android:id="@+id/BGLevel_1"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="-150dp"
+                android:layout_marginLeft="-40dp"
+                android:src="@drawable/level_1" />
+            <TextView
+                android:id="@+id/NameLevel_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Level 1: Snow White Forest"
+                android:fontFamily="@font/minecrafter_3"
+                android:textSize="7dp"
+                android:textColor="@color/white"
+                android:shadowColor="@color/black"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="3"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Level_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+            <ImageView
+                android:id="@+id/BGDifficultyLevel_2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="-25dp"
+                android:layout_marginLeft="-10dp"
+                android:src="@drawable/level_2" />
+            <TextView
+                android:id="@+id/DifficultyLevel_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Normal"
+                android:fontFamily="@font/minecrafter_3"
+                android:textSize="7dp"
+                android:textColor="@color/white"
+                android:shadowColor="@color/black"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="3"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="20dp" />
+            <ImageView
+                android:id="@+id/BGLevel_2"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="-150dp"
+                android:layout_marginLeft="-40dp"
+                android:src="@drawable/level_2" />
+            <TextView
+                android:id="@+id/NameLevel_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Level 2: Primary forest"
+                android:fontFamily="@font/minecrafter_3"
+                android:textSize="7dp"
+                android:textColor="@color/white"
+                android:shadowColor="@color/black"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="3"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Level_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:id="@+id/BGDifficultyLevel_3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="-25dp"
+                android:layout_marginLeft="-10dp"
+                android:src="@drawable/level_3" />
+            <TextView
+                android:id="@+id/DifficultyLevel_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hard"
+                android:fontFamily="@font/minecrafter_3"
+                android:textSize="7dp"
+                android:textColor="@color/white"
+                android:shadowColor="@color/black"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="3"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="25dp"/>
+            <ImageView
+                android:id="@+id/BGLevel_3"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="-150dp"
+                android:layout_marginLeft="-40dp"
+                android:src="@drawable/level_3" />
+            <TextView
+                android:id="@+id/NameLevel_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Level 3: Dark Forest"
+                android:fontFamily="@font/minecrafter_3"
+                android:textSize="7dp"
+                android:textColor="@color/white"
+                android:shadowColor="@color/black"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="3"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Heart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:id="@+id/Heart_1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="75dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/heart" />
+        <ImageView
+            android:id="@+id/Heart_2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="75dp"
+            android:layout_marginLeft="35dp"
+            android:src="@drawable/heart" />
+        <ImageView
+            android:id="@+id/Heart_3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="75dp"
+            android:layout_marginLeft="65dp"
+            android:src="@drawable/heart" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ExitNotification"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <ImageView
+            android:id="@+id/TagExitNotification"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="105dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/login_et"/>
+        <TextView
+            android:id="@+id/NotificationBuySilver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notification"
+            android:fontFamily="@font/minecrafter_3"
+            android:textSize="10dp"
+            android:textColor="@color/white"
+            android:shadowColor="@color/black"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="3"
+            android:layout_marginTop="126dp"
+            android:layout_centerHorizontal="true"/>
+        <ImageView
+            android:id="@+id/TableNotificationExit"
+            android:layout_width="450dp"
+            android:layout_height="160dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="140dp"
+            android:src="@drawable/bg_buy"/>
+        <TextView
+            android:id="@+id/ContentNotificationExit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Are you sure "
+            android:fontFamily="@font/minecrafter_3"
+            android:textSize="8dp"
+            android:textColor="@color/white"
+            android:shadowColor="@color/black"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="3"
+            android:layout_marginTop="170dp"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:id="@+id/ContentNotificationExit2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="you want to exit the game?"
+            android:fontFamily="@font/minecrafter_3"
+            android:textSize="8dp"
+            android:textColor="@color/white"
+            android:shadowColor="@color/black"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="3"
+            android:layout_marginTop="200dp"
+            android:layout_centerHorizontal="true"/>
+        <ImageView
+            android:id="@+id/BGYesExit"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="350dp"
+            android:layout_marginTop="230dp"
+            android:src="@drawable/bg_yes_no"/>
+        <ImageView
+            android:id="@+id/YesExit"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_marginLeft="352dp"
+            android:layout_marginTop="227dp"
+            android:src="@drawable/equip"/>
+        <ImageView
+            android:id="@+id/BGNoExit"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="460dp"
+            android:layout_marginTop="230dp"
+            android:src="@drawable/bg_yes_no"/>
+        <ImageView
+            android:id="@+id/NoExit"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_marginLeft="462dp"
+            android:layout_marginTop="227dp"
+            android:src="@drawable/no"/>
+    </RelativeLayout>
+
+</RelativeLayout>

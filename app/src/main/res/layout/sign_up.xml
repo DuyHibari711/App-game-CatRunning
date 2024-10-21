@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/game_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp">
+
+    <!-- Hình nền -->
+    <ImageView
+        android:id="@+id/background1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/background"
+        android:scaleType="fitXY" />
+
+
+    <!-- Signup -->
+    <RelativeLayout
+        android:id="@+id/Signup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/Signup_Table"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/signup_table"/>
+
+        <ImageView
+            android:id="@+id/ImgSignUp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:src="@drawable/sign_up"/>
+
+        <ImageView
+            android:id="@+id/user_name"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="140dp"
+            android:layout_marginLeft="200dp"
+            android:src="@drawable/user_name"/>
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="135dp"
+            android:fontFamily="@font/minecrafter_3"
+            android:textSize="6dp"
+            android:textColor="@color/white"
+            android:shadowColor="@color/black"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="3"
+            android:layout_toRightOf="@id/user_name"
+            android:paddingLeft="20dp"
+            android:paddingBottom="5dp"
+            android:background="@drawable/login_et"
+            android:inputType="text"/>
+
+
+        <ImageView
+            android:id="@+id/password"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="195dp"
+            android:layout_marginLeft="200dp"
+            android:src="@drawable/password"/>
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="195dp"
+            android:fontFamily="@font/minecrafter_3"
+            android:textSize="6dp"
+            android:textColor="@color/white"
+            android:shadowColor="@color/black"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="3"
+            android:layout_toRightOf="@id/user_name"
+            android:paddingLeft="20dp"
+            android:paddingBottom="5dp"
+            android:background="@drawable/login_et"
+            android:inputType="textPassword"/>
+
+        <ImageView
+            android:id="@+id/email"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="140dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/etUsername"
+            android:src="@drawable/email"/>
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="135dp"
+            android:fontFamily="@font/minecrafter_3"
+            android:textSize="6dp"
+            android:textColor="@color/white"
+            android:shadowColor="@color/black"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="3"
+            android:layout_toRightOf="@id/email"
+            android:paddingLeft="20dp"
+            android:paddingBottom="5dp"
+            android:background="@drawable/login_et"
+            android:inputType="textEmailAddress"/>
+
+        <CheckBox
+            android:id="@+id/CheckPassword"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/etEmail"
+            android:layout_toRightOf="@id/etPassword"
+            android:layout_marginLeft="65dp"
+            android:background="@drawable/check_password"
+            android:button="@android:color/transparent"
+            android:layout_marginTop="25dp"
+            android:onClick="CheckPassword"/>
+        <ImageView
+            android:id="@+id/mouse_check"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/etEmail"
+            android:layout_toRightOf="@id/etPassword"
+            android:layout_marginLeft="63dp"
+            android:layout_marginTop="23dp"
+            android:src="@drawable/mouse_check"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/TextCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etEmail"
+            android:text="Check Password"
+            android:fontFamily="@font/minecrafter_3"
+            android:textSize="9dp"
+            android:textColor="@color/white"
+            android:shadowColor="@color/black"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="3"
+            android:layout_toRightOf="@id/CheckPassword"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="40dp"/>
+
+        <ImageButton
+            android:id="@+id/start_signup"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:background="@drawable/login_et"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/etPassword"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="20dp"/>
+        <ImageView
+            android:id="@+id/ImgStartSignup"
+            android:layout_width="150dp"
+            android:layout_height="13dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/etPassword"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="28dp"
+            android:src="@drawable/sign_up"/>
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
